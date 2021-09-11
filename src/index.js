@@ -1,6 +1,6 @@
 'use strict'
 
-const uniqueRandomArray =  require('unique-random-array')
+const uniqueRandomArray = require('./unique-random-array')
 const harryPotterNames = require('./harry-potter-names.json')
 
 const getRandomItem = uniqueRandomArray(harryPotterNames)
