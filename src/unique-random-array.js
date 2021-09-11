@@ -1,4 +1,4 @@
-const uniqueRandom = require('./unique-random')
+import uniqueRandom from './unique-random';
 
 module.exports = function uniqueRandomArray(array) {
 	const random = uniqueRandom(0, array.length - 1);
