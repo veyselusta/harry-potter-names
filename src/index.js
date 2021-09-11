@@ -1,6 +1,6 @@
-'use strict'
+'use strict' 
 
-const uniqueRandomArray = require('./unique-random-array')
+const uniqueRandomArray = require('./unique-random-array') 
 const harryPotterNames = require('./harry-potter-names.json')
 
 const getRandomItem = uniqueRandomArray(harryPotterNames)
@@ -15,7 +15,7 @@ function random (number) {
   if (number === undefined) {
     return getRandomItem()
   } else {
-    return Array.from({length: 5}, (v, i) => i).map(number => getRandomItem())
+    return Array.from({length: 5}, (v, i) => i).map(() => getRandomItem())
   }
 }
 
