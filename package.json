@@ -17,12 +17,14 @@
     "url": "https://github.com/veyselusta/harry-potter-names"
   },
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
   "author": "Veysel Usta <vyslusta1@gmail.com>",
   "license": "(MIT)",
-  "dependencies": {},
+  "homapage": "https://github.com/veyselusta/harry-potter-names",
+  "bugs": {
+    "url": "https://github.com/veyselusta/harry-potter-names/issues"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
