@@ -20,5 +20,5 @@ function random (number) {
 }
 
 function sameFirstLetter (char) {
-  return harryPotterNames.filter(name => name == char)
+  return harryPotterNames.filter(name => name.toLowerCase() == char.toLowerCase())
 }
