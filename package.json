@@ -1,7 +1,7 @@
 {
-  "name": "library",
+  "name": "get-harry-potter-names",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get random Harry Potter names from",
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run test",
@@ -11,7 +11,7 @@
     "test": "NODE_ENV=test nyc mocha test",
     "watch": "mocha test --watch",
     "lint": "eslint src",
-    "validate": "npm-run-all test lint build:main"
+    "validate": "npm-run-all test  build:main build:umd"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "files": [
     "dist"
   ],
-  "author": "Veysel Usta <vyslusta1@gmail.com>",
+  "author": "veyselusta <vyslusta1@gmail.com>",
   "license": "(MIT)",
   "homapage": "https://github.com/veyselusta/harry-potter-names",
   "bugs": {
