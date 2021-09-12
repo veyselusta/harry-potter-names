@@ -1,12 +1,14 @@
 'use strict';
 
-var uniqueRandomArray = require('./unique-random-array');
+var _uniqueRandomArray = _interopRequireDefault(require("./unique-random-array"));
 
-var harryPotterNames = require('./harry-potter-names.json');
+var _harryPotterNames = _interopRequireDefault(require("./harry-potter-names.json"));
 
-var getRandomItem = uniqueRandomArray(harryPotterNames);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var getRandomItem = (0, _uniqueRandomArray.default)(_harryPotterNames.default);
 module.exports = {
-  all: harryPotterNames,
+  all: _harryPotterNames.default,
   random: random,
   sameFirstLetter: sameFirstLetter
 };
@@ -15,18 +17,14 @@ function random(number) {
   if (number === undefined) {
     return getRandomItem();
   } else {
-    return Array.from({
-      length: 5
-    }, function (v, i) {
-      return i;
-    }).map(function () {
+    return Array(number).fill('').map(function () {
       return getRandomItem();
     });
   }
 }
 
 function sameFirstLetter(char) {
-  return harryPotterNames.map(function (name) {
+  return _harryPotterNames.default.filter(function (name) {
     return name == char;
   });
 }

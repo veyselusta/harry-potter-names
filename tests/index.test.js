@@ -1,7 +1,7 @@
 'use strict'
 
 const expect = require('chai').expect
-const harryPotterNames = require('.')
+const harryPotterNames = require('../src/index')
 
 describe('harry-potter-names', function () {
   it ('should have a list of all available names', function () {
