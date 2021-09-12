@@ -1,6 +1,6 @@
 import uniqueRandom from './unique-random';
 
-module.exports = function uniqueRandomArray(array) {
+export default function uniqueRandomArray(array) {
 	const random = uniqueRandom(0, array.length - 1);
 	return () => array[random()];
 }

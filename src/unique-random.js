@@ -1,4 +1,4 @@
-module.exports =  function uniqueRandom(minimum, maximum) {
+export default function uniqueRandom(minimum, maximum) {
   let previousValue;
 
   return function random() {
