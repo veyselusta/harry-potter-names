@@ -7,7 +7,7 @@ Get random names from Harry Potter characters.
 This package is distributed via npm:
 
 ```
-npm install starwars-names
+npm install get-harry-potter-names
 ```
 
 ## Usage
