@@ -13,10 +13,11 @@ npm install starwars-names
 ## Usage
 
 ```javascript
-const names = require('get-harry-potter-names');
-let allNames = names.all;
-let randomName = names.random();
-let threeRandomNames = names.random(3);
+const names = require('get-harry-potter-names')
+
+let allNames = names.all
+let randomName = names.random()
+let threeRandomNames = names.random(3)
 let getSame = names.sameFirstLetter('h')
 
 ```
